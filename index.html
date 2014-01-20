@@ -28,11 +28,13 @@
             var sourceSquare = (item.media.m).replace("_m.jpg", "_b.jpg");
 
             // Here's where we piece together the HTML
-            htmlString += '<a href="' + item.link + '" target="_blank">';
+            // htmlString += '<a href="' + item.link + '" target="_blank">';
             htmlString += '<img class="img-responsive" title="' + item.title + '" src="' + sourceSquare;
             htmlString += '" alt="'; htmlString += item.title + '" />';
             htmlString += '</a>';
             console.log(htmlString);
+
+            if (htmlString) return false;
 
           });
 
