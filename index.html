@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.css">
+  <link rel="stylesheet" href="assets/css/owl.transitions.css">
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <script language="javascript" type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      // $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=99895690@N00&lang=en-us&format=json&jsoncallback=?", function(data){
+      //   $.each(data.items, function(i,item){
+      //     $("<img/>").attr("src", item.media.m.replace('_m','_b')).appendTo("#owlcontent")
+      //       .wrap("<div><a href='" + item.link + "'></a></div>");
+      //   });
+      // });
+
+      // $("#owl-example").owlCarousel();
+
+       $("#owl-example").owlCarousel({
+          jsonPath : 'http://api.flickr.com/services/feeds/photos_public.gne?id=99895690@N00&lang=en-us&format=json&jsoncallback=?',
+          jsonSuccess : customDataSuccess
+        });
+
+        function customDataSuccess(data){
+          var content = "";
+          for(var i in data["items"]){
+
+             var img = data["items"][i].media;
+             var title = data["items"][i].title;
+
+             content += "<img src=\"" +img+ "\" alt=\"" +title+ "\">"
+          }
+          $("#owl-example").html(content);
+        }
+
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="owl-example" class="owl-carousel">
+            <!-- <div id="owlcontent"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+<!-- My Flickr api link
+http://api.flickr.com/services/feeds/photos_public.gne?id=99895690@N00&lang=en-us&format=json
+ -->
