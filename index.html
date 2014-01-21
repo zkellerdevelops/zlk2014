@@ -10,94 +10,17 @@
   <script language="javascript" type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-
-      $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=99895690@N00&lang=en-us&format=json&jsoncallback=?", displayImages);
-
-      function displayImages(data) {
-
-        // Start putting together the HTML string
-        var htmlString = "";
-
-          // Now start cycling through our array of Flickr photo details
-          $.each(data.items, function(i,item){
-
-            // I only want the ickle square thumbnails
-            var sourceSquare = (item.media.m).replace("_m.jpg", "_b.jpg");
-
-            // Here's where we piece together the HTML
-            // htmlString += '<a href="' + item.link + '" target="_blank">';
-            htmlString += '<img class="img-responsive" title="' + item.title + '" src="' + sourceSquare;
-            htmlString += '" alt="'; htmlString += item.title + '" />';
-            htmlString += '</a>';
-            console.log(htmlString);
-
-            if (htmlString) return false;
-
-          });
-
-          // Pop our HTML in the #images DIV
-          $('#images').html(htmlString);
-
-        // Close down the JSON function call
-        }
-
-      // $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=99895690@N00&lang=en-us&format=json&jsoncallback=?", function(data){
-      //   $.each(data.items, function(i,item){
-      //     $("<img/>").attr("src", item.media.m.replace('_m','_b')).appendTo("#owlcontent")
-      //       .wrap("<div><a href='" + item.link + "'></a></div>");
-      //   });
-      // });
-
-      // $("#owl-example").owlCarousel();
-
-      // $("#owl-example").owlCarousel({
-      //   var URL = "http://api.flickr.com/services/feeds/photos_public.gne";
-      //   var ID = "99895690@N00";
-      //   var jsonFormat = "&format=json&jsoncallback=?";
-      //   var ajaxURL = URL + "?id=" + ID + jsonFormat;
-
-      //   $.getJSON(ajaxURL,function(data) {
-      //     // $('h1').text(data.title);
-      //     $.each(data.items,function(i,photo) {
-      //       var photoHTML = '<span class="image">';
-      //       photoHTML += '<div><a href="' + photo.link + '">';
-      //       photoHTML += '<img src="' + photo.media.m.replace('_m','_b') + '"></a></div>';
-      //       $('#owl-example').html(photoHTML);
-      //     }); // end each
-      //   }); // end get JSON;
-      // });
-
-       // $("#owl-example").owlCarousel({
-       //    jsonPath : 'http://api.flickr.com/services/feeds/photos_public.gne?id=99895690@N00&lang=en-us&format=json&jsoncallback=?',
-       //    jsonSuccess : customDataSuccess
-       //  });
-
-       //  function customDataSuccess(data){
-       //    var content = "";
-       //    for(var i in data["items"]){
-
-       //       var img = data["items"][i].media;
-       //       console.log('img');
-       //       var title = data["items"][i].title;
-
-       //       content += "<img src=\"" +img+ "\" alt=\"" +title+ "\">"
-       //    }
-       //    $("#owl-example").html(content);
-       //  }
-
-    });
-  </script>
-
+  <script src="assets/js/scripts.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
+    <div class="fullwidth" id="images">
+    </div>
+
     <div class="container">
       <div class="row">
-        <div class="col-lg-12" id="images">
+        <div class="col-lg-12">
           <!-- <div id="owl-example" class="owl-carousel"> -->
             <!-- <div id="owlcontent"></div> -->
           </div>
