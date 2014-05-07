@@ -1,0 +1,29 @@
+#hello {
+  background-color: #ccc;
+}
+
+#images {
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+    max-width: 100%;
+
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+}
+
+
+
+
+/*#images {
+    width: 40em;
+    height: 20em;
+    position:relative;
+}
+#imgcontainer {
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+}*/
