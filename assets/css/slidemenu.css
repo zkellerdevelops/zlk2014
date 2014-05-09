@@ -5,8 +5,10 @@
    ========================================================================== */
 
 a.nav-expander {
-  background: none repeat scroll 0 0 #000000;
-  color: #FFFFFF;
+  background-image: url(../img/menu.png);
+  background-repeat: no-repeat;
+  /*background: none repeat scroll 0 0 #000000;*/
+  /*color: #FFFFFF;*/
   display: block;
   font-size: 15px;
   font-weight: 400;
@@ -52,7 +54,7 @@ nav {
   top: 0;
   width: 20em;
   z-index: 2000;
-  
+
   transition: right 0.3s ease-in-out 0s;
   -webkit-transition: right 0.3s ease-in-out 0s;
   -moz-transition: right 0.3s ease-in-out 0s;

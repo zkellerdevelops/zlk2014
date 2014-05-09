@@ -1,16 +1,11 @@
 body, html {
   background-image: url(../img/pattern.png);
-}
-
-#images {
-	background-repeat: no-repeat;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .fullwidth {
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 }
 
 .logo {
@@ -60,20 +55,48 @@ body, html {
   padding-right: 15px;
 }
 
+.bigpad {
+  padding: 50px 0px 50px 0px;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.grey {
+  background-color: #edeeee;
+}
+
+.carousel-control.right {
+  background: rgba(0, 0, 0, 0);
+}
+.carousel-control.left {
+  background: rgba(0, 0, 0, 0);
+}
+
 h1 {
-	color: #5dc5c3;
-	font-family: 'Lato', sans-serif;
-	font-weight: 600;
+	color: #66cccc;
+	font-family: 'proxima-nova', sans-serif;
+	font-weight: 700;
   letter-spacing: .1px;
+  text-transform: uppercase;
 }
 
 h2 {
   color: #5dc5c3;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 36px;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 24px;
   letter-spacing: .1px;
   margin-top: -10px;
+}
+
+p {
+  color: #5dc5c3;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 @media (min-width: 768px){

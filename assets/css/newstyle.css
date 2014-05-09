@@ -1,21 +1,36 @@
 #hello {
-  background-color: #ccc;
 }
 
 #images {
-  background-repeat: no-repeat;
-  overflow: hidden;
-
-    max-width: 100%;
-
-  /* just in case, to force correct aspect ratio */
-  height: auto !important;
+/*  position: fixed;*/
+/*  overflow: hidden;
+  z-index: 0;*/
 }
 
 .navbar {
   background-color: rgba(0, 0, 0, 0);
 }
 
+#imagecontainer {
+  position: relative;
+}
+
+#imagecontainer:before {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff;
+  top: 0;
+  content: '';
+  height: 0;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+  width: 0;
+}
+
+#slidercontainer {
+  height: 400px;
+}
 
 /*#images {
     width: 40em;

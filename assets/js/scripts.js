@@ -1,6 +1,6 @@
-//+++++ DIV BACKGROUND IMAGE ++++++
 $(document).ready(function () {
 
+    //Flickr feed
     $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=99895690@N00&lang=en-us&format=json&jsoncallback=?", displayImages);
 
         function displayImages(data) {
@@ -31,6 +31,8 @@ $(document).ready(function () {
         // Close down the JSON function call
         }
 
+    // +++++++++++++++++++++++++++++++++++++++++++++
+
     //Navigation Menu Slider
         $('#nav-expander').on('click',function(e){
             e.preventDefault();
@@ -40,8 +42,7 @@ $(document).ready(function () {
             e.preventDefault();
             $('body').removeClass('nav-expanded');
         });
-        
-        
+
         // Initialize navgoco with default options
         $(".main-menu").navgoco({
             caret: '<span class="caret"></span>',
