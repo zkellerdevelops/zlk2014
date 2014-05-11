@@ -40,11 +40,11 @@ a.nav-expander.fixed {
 }
 
 .nav-expanded a.nav-expander.fixed {
-    right: 20em;
+    right: 15em;
 }
 
 nav {
-  background: #2d2f33;
+  background: #5dc5c3;
   display: block;
   height: 100%;
   overflow: auto;
@@ -74,9 +74,9 @@ body.nav-expanded {
 }
 
 #nav-close {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 14px;
   padding-right: 10px;
 }
 
@@ -85,19 +85,19 @@ body.nav-expanded {
 }
 
 .main-menu li {
-  border-bottom: 1px solid #323949;
+  border-bottom: 0px solid #323949;
   margin-left: 20px;
   font-size: 18px;
   padding: 12px;
 }
 
 .main-menu li a {
-  color: #6F7D8C;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .main-menu li a:hover {
-  color: #FFFFFF;
+  color: #000000;
   text-decoration: none;
 }
 
