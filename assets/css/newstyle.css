@@ -54,14 +54,14 @@
 }
 
 #social:before {
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #edeeee;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #fff;
   top: 0;
   content: '';
   height: 0;
   left: 50%;
-  margin-left: -20px;
+  margin-left: -40px;
   position: absolute;
   width: 0;
 }
