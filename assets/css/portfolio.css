@@ -27,6 +27,9 @@ body {
   display: none;
 }
 
+.is-visible {
+  display: none;
+}
 
 .thumb {
   /*float: left;*/
@@ -38,3 +41,12 @@ body {
   padding: .5em;
 }
 
+@media (max-width: 767px) {
+  .is-hidden {
+    display: none;
+  }
+  .is-visible {
+    display: block;
+  }
+  
+}

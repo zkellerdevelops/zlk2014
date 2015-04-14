@@ -1,25 +1,3 @@
-// $(document).ready(function () {
-
-//   // $('#paris').click(function(){
-//   //   $('#ttwp').slideToggle();
-//   // })
-
-//   // $('#angel').click(function(){
-//   //   $('#angelbig').slideToggle();
-//   // })
-
-//     $('.projthumb').click(function () {
-//         var index = $(this).index(),
-//             newTarget = $('.targetDiv').eq(index).slideDown();
-//         $('.targetDiv').not(newTarget).slideUp();
-
-//     });
-
-
-
-// });
-
-
 jQuery(function(){
    jQuery('.showSingle').click(function(){
        var item = $(this);
