@@ -19,10 +19,11 @@
   position: relative;
 }
 
-#imagecontainer:before {
+/* FIX THIS!!!!!!!! */
+/*#flickr:before{
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #fff;
+  border-top: 20px solid #ccc;
   top: 0;
   content: '';
   height: 0;
@@ -31,9 +32,12 @@
   position: absolute;
   width: 0;
 }
+*/
+
+
 
 #carouselcontent {
-
+  margin-top: 50px;
 }
 
 #social {
@@ -66,9 +70,7 @@
   width: 0;
 }
 
-#slidercontainer {
-  height: 400px;
-}
+
 
 .btn-blue {
   color: #FFFFFF;
@@ -119,4 +121,46 @@ fieldset[disabled] .btn-blue.active {
 .btn-blue .badge {
   color: #FFFFFF;
   background-color: #5DC5C3;
+}
+
+#contactcontainer {
+  position: relative;
+  background-image: url(../img/socialbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#contactcontainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#contactcontainer ul li {
+  display: inline;
+}
+
+#contactcontainer img {
+   width: 80px;
+   height: auto;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.shortform {
+  width: 50%;
+}
+
+.formpad {
+  padding-bottom: 15px;
+}
+
+#textfield {
+  height: 300px;
+}
+
+.transparentbg {
+  background-color: rgba(255, 255, 255, .5);
 }

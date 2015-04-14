@@ -5,11 +5,10 @@
   <script type="text/javascript" src="//use.typekit.net/dop2ajh.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
   <script language="javascript" type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="assets/css/slidemenu.css">
+  <!-- <link rel="stylesheet" href="assets/css/slidemenu.css"> -->
   <script src="assets/js/jquery.navgoco.js"></script>
 
   <script src="assets/js/scripts.js"></script>
@@ -19,85 +18,58 @@
 
 <body>
 
-<!--   <nav>
-    <ul class="list-unstyled main-menu">
-      <li class="text-right"><a href="#" id="nav-close">X</a></li>
-      <li><a href="#"><h4>About</h4></span></a></li>
-      <li><a href="#"><h4>Portfolio</h4></span></a></li>
-      <li><a href="#"><h4>Contact</h4></span></a></li>
-    </ul>
+  <nav class="navbar navbar-default" role="navigation" id="mainnav">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" id="hello">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="assets/img/logo.png" /></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="navlink"><a href="portfolio.html">Portfolio</a></li>
+                <li class="navlink"><a href="#">About</a></li>
+                <li class="navlink"><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+            </div> <!-- #hello -->
+          </div> <!-- row -->
+        </div> <!-- container -->
+    </div><!-- /.container-fluid -->
   </nav>
- -->
-  <div class="row">
-    <div class="col-md-12">
-      <div class="col-md-6">
-      </div>
-      <div class="col-md-6">
-<!--         <a id="nav-expander" class="nav-expander fixed">
-          <img src-"assets/img/menu.png" />
-        </a> -->
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 bottompad" id="hello">
-        <img src="assets/img/logo.png" />
-        <!-- <h1>here is some text.</h1> -->
-      </div>
-    </div>
-  </div>
 
     <div class="container-fluid white bigpad" id="slidercontainer">
       <div class="container">
         <div class="row">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner center-block" id="carouselcontent">
-              <div class="item active text-center">
-                <h3>Hi there.</h3>
-              </div>
-              <div class="item text-center">
-                <h3>I'm Zach.</h3>
-              </div>
-              <div class="item text-center">
-                <h3>A designer and developer from Nashville, TN.</h3>
-              </div>
-            </div>
-
-            <!-- Controls -->
-<!--             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-          </div> -->
+          <div class="col-md-4">
+            <img src="assets/img/headshot.png" alt="headhsot" class="img-responsive img-circle headshot" />
           </div>
+          <div class="col-md-8">
+            <div>
+              <h3>Hi there. I'm Zach.</h3>
+              <h3>A designer and developer from Nashville, TN.</h3>
+              <p><h2>I've been slingin' pixels for 11 years. I also love writing code. I'm into earthstones, borthtones and erogenous zones.</h2></p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
   <div class="container-fluid grey bigpad" id="imagecontainer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6" id="images">
-        </div>
-        <div class="col-md-6">
-          <h3>365 Project</h3>
-          <hr class="line">
-          <p><h2>I'm attempting to post one photo on flickr every day for 365 days. It's harder than it sounds, trust me.</h2></p>
-          <a href="https://www.flickr.com/photos/eloist2/sets/72157639259635354/" target="_blank"><button class="btn btn-blue" >View project</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <div class="container-fluid white bigpad">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <div class="bottompad">
+            <div>
               <h3>Recent work.</h3>
             </div>
           </div>
@@ -106,15 +78,33 @@
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner center-block" id="carouselcontent">
               <div class="item active text-center">
+                <img src="assets/img/work5.jpg" alt="Taylor Swfit Livestream" />
+              </div>
+              <div class="item text-center">
+                <img src="assets/img/work4.jpg" alt="Route 91 Harvest festival" />
+              </div>
+              <div class="item text-center">
                 <img src="assets/img/work1.jpg" alt="ETSU Arts Initiative" />
               </div>
               <div class="item text-center">
                 <img src="assets/img/work2.jpg" alt="PowerNation TV" />
               </div>
-              <div class="item text-center">
-                <img src="assets/img/work3.jpg" alt="The Beauty of Broken" />
-              </div>
             </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <div class="container-fluid white bigpad" id="flickr">
+      <div class="container bigpad">
+        <div class="row">
+          <div class="col-md-6" id="images">
+          </div>
+          <div class="col-md-6">
+            <h3>Photos.</h3>
+            <hr class="line">
+            <p><h2>I love to shoot photos. Never would I claim to be a photographer, but check out my flickr feed if you like pictures of cars, hound dogs, and random objects.</h2></p>
+            <a href="http://www.flickr.com/photos/eloist2/" target="_blank"><button class="btn btn-blue" >View feed</button></a>
           </div>
         </div>
       </div>
@@ -146,17 +136,17 @@
 
 
 
-<div class="container-fluid" id="footerbar">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 toppad">
-        <img src="assets/img/logosmall.png" alt="ZLK" />
-        <p>2014 Zach Keller
-        <br>Crafted with love in the Volunteer State.</p>
+  <div class="container-fluid" id="footerbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 toppad">
+          <img src="assets/img/logosmall.png" alt="ZLK" />
+          <p>2014 Zach Keller
+          <br>Crafted with love in the Volunteer State.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
