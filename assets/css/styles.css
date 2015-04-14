@@ -3,6 +3,19 @@ body, html {
   overflow-x: hidden;
 }
 
+#slidercontainer {
+  background-image: url(../img/vw_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+  /*height: 500px;*/
+}
+
+.headshot {
+/*  height: 80%;
+  width: 80%;*/
+}
+
 .fullwidth {
 	width: 100%;
 	height: 100%;
@@ -23,12 +36,25 @@ body, html {
   padding-top: 10px;
 }
 
+.toppadbig {
+  padding-top: 50px;
+}
+
 .bottompad {
 	padding-bottom: 50px;
 }
 
+.allpad {
+  padding: 1em;
+}
+
+.about-img-pad {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
 .leading {
-  line-height: -10px;
+  line-height: -10px !important;
 }
 
 .dividerline {
@@ -47,7 +73,12 @@ body, html {
 }
 
 .bigpad {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 15px 50px 15px;
+}
+
+.padsmall {
+  padding-top: 0px;
+  margin-bottom: 0px;
 }
 
 .white {
@@ -66,7 +97,7 @@ body, html {
 }
 
 .line {
-  border-top: 1px solid rgba(93, 197, 193, .3);
+  border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 h1 {
@@ -77,7 +108,7 @@ h1 {
 }
 
 h2 {
-  color: #5dc5c3;
+  color: #5d6060;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -93,6 +124,24 @@ h3 {
   font-weight: 100;
   font-style: normal;
   font-size: 40px;
+  color: #5d6060;
+}
+
+.headline {
+  font-weight: 300;
+  letter-spacing: -1.25px;
+  color: #5d6060;
+}
+
+.aqua {
+  color: #5dc5c3;
+}
+
+.email-text {
+  padding-top: 25px;
+}
+.email-text a {
+  color: #5dc5c3;
 }
 
 h4 {
@@ -123,4 +172,211 @@ body {
   .container {
   /* width: 750px; */
   }
+  .navbar-nav {
+    float: right;
+  }
 }
+
+@media (max-width: 767px) {
+  .about-img-pad {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .about-text-pad {
+    padding-bottom: 50px;
+  }
+}
+
+
+#mainnav {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid #fff;
+}
+
+.navbar-toggle {
+  margin-top: 15px;
+  border: 0px solid #fff;
+}
+
+.navbar-nav {
+  padding-top: 25px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #5DC5C3;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  background-color: #5DC5C3;
+  color: #fff;
+}
+
+
+/* Fade transition for carousel items */
+.carousel .item {
+    left: 0 !important;
+      -webkit-transition: opacity .8s; /*adjust timing here */
+         -moz-transition: opacity .8s;
+           -o-transition: opacity .8s;
+              transition: opacity .8s;
+}
+.carousel-control {
+    background-image: none !important; /* remove background gradients on controls */
+}
+/* Fade controls with items */
+.next.left,
+.prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+.active.left,
+.active.right {
+    opacity: 0;
+    z-index: 2;
+}
+
+#hello {
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#footerbar {
+  height: 200px;
+}
+
+#imagecontainer {
+  position: relative;
+}
+
+#carouselcontent {
+  margin-top: 50px;
+}
+
+#social {
+  position: relative;
+  background-image: url(../img/socialbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#social ul li {
+  display: inline;
+}
+
+#social:before {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #fff;
+  top: 0;
+  content: '';
+  height: 0;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+  width: 0;
+}
+
+
+
+.btn-blue {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #5DC5C3;
+  border-color: #5DC5C3;
+  border-radius: 0;
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active,
+.open .dropdown-toggle.btn-blue {
+  color: #FFFFFF;
+  background-color: #4b9c9a;
+  border-color: #4b9c9a;
+  border-radius: 0;
+}
+
+.btn-blue:active,
+.btn-blue.active,
+.open .dropdown-toggle.btn-blue {
+  background-image: none;
+}
+
+.btn-blue.disabled,
+.btn-blue[disabled],
+fieldset[disabled] .btn-blue,
+.btn-blue.disabled:hover,
+.btn-blue[disabled]:hover,
+fieldset[disabled] .btn-blue:hover,
+.btn-blue.disabled:focus,
+.btn-blue[disabled]:focus,
+fieldset[disabled] .btn-blue:focus,
+.btn-blue.disabled:active,
+.btn-blue[disabled]:active,
+fieldset[disabled] .btn-blue:active,
+.btn-blue.disabled.active,
+.btn-blue[disabled].active,
+fieldset[disabled] .btn-blue.active {
+  background-color: #FFFFFF;
+  border-color: #5DC5C3;
+}
+
+.btn-blue .badge {
+  color: #FFFFFF;
+  background-color: #5DC5C3;
+}
+
+#contactcontainer {
+  position: relative;
+  background-image: url(../img/socialbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 50px 0 200px 0;
+}
+
+#contactcontainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#contactcontainer ul li {
+  display: inline;
+}
+
+#contactcontainer img {
+   width: 80px;
+   height: auto;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.shortform {
+  width: 50%;
+}
+
+.formpad {
+  padding-bottom: 15px;
+}
+
+#textfield {
+  height: 300px;
+}
+
+.transparentbg {
+  background-color: rgba(255, 255, 255, .5);
+}
+

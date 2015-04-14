@@ -2,44 +2,158 @@
 <html>
 <head>
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:900,400,700,400italic,300italic,500,500italic,700italic,300,900italic,100,100italic' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="//use.typekit.net/dop2ajh.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.css">
-  <link rel="stylesheet" href="assets/css/owl.theme.css">
-  <link rel="stylesheet" href="assets/css/owl.transitions.css">
   <script language="javascript" type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/jquery.navgoco.js"></script>
   <script src="assets/js/scripts.js"></script>
-  <link rel="stylesheet" href="assets/css/splash.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/magic.min.css">
 </head>
 
 <body>
-  <div class="wrapper">
 
-      <div class="container" id="title">
-        <div class="menu">
-          <img src="assets/img/logo.png">
-          <hr class="dividerline">
-        </div>
-        <div class="col-lg-12">
-          <div class="col-lg-6">
-            <!-- <hr class="dividerline"> -->
-            <div id="welcometype">
-              <h1>Be back soon.</h1>
-              <h2>In the meantime, enjoy a photo:</h2>
+  <nav class="navbar navbar-default" role="navigation" id="mainnav">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" id="hello">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="assets/img/logo.png" /></a>
             </div>
-            <div id="images"></div>
-            <div id="sociallist" class="toppad">
-              <ul>
-                <li><a href="http://www.linkedin.com/in/zkellerdevelops/" target="_blank"><img src="assets/img/linkedin.png"></a></li>
-                <li><a href="http://www.flickr.com/photos/eloist2/" target="_blank"><img src="assets/img/flickr.png"></a></li>
-                <li><a href="http://instagram.com/eloist" target="_blank"><img src="assets/img/instagram.png"></a></li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="navlink"><a href="portfolio.html">Portfolio</a></li>
+                <li class="navlink"><a href="about.html">About</a></li>
+                <li class="navlink"><a href="contact.html">Contact</a></li>
               </ul>
+            </div><!-- /.navbar-collapse -->
+            </div> <!-- #hello -->
+          </div> <!-- row -->
+        </div> <!-- container -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+    <div class="container-fluid white bigpad" id="slidercontainer">
+      <div class="container">
+        <div class="row" id="welcome">
+          <div class="col-md-4">
+            <img src="assets/img/headshot.png" alt="headhsot" class="img-responsive img-circle headshot magictime vanishIn" />
+          </div>
+          <div class="col-md-8 toppadbig">
+            <div>
+              <h3>I'm Zach.<br>
+              <span class="headline">A designer and developer from Nashville, TN.</span></h3>
+              <hr class="line">
+              <p><h2>I've been pushing pixels for 12 years, and loving (almost) every minute of it.</h2></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  <div class="container-fluid grey bigpad" id="imagecontainer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div>
+              <h3>Recent work.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner center-block" id="carouselcontent">
+              <div class="item active text-center">
+                <img src="assets/img/work5.jpg" alt="Taylor Swfit Livestream" />
+              </div>
+              <div class="item text-center">
+                <img src="assets/img/work4.jpg" alt="Route 91 Harvest festival" />
+              </div>
+              <div class="item text-center">
+                <img src="assets/img/work1.jpg" alt="ETSU Arts Initiative" />
+              </div>
+              <div class="item text-center">
+                <img src="assets/img/work2.jpg" alt="PowerNation TV" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-  </div> <!-- wrapper -->
+  </div>
+
+    <div class="container-fluid white bigpad pointed scrollReveal" id="flickr">
+      <div class="container bigpad">
+        <div class="row">
+          <div class="col-md-6" id="images">
+          </div>
+          <div class="col-md-6">
+            <h3>Photos.</h3>
+            <hr class="line">
+            <p><h2>I love to shoot photos. Never would I claim to be a photographer, but check out my flickr feed if you like pictures of cars, hound dogs, and random objects.</h2></p>
+            <a href="http://www.flickr.com/photos/eloist2/" target="_blank"><button class="btn btn-blue" >View feed</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid white bigpad" id="social">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="bottompad">
+              <h3>Say hello.</h3>
+            </div>
+            <div class="bottompad">
+              <ul>
+                <li><a href="http://www.twitter.com/zlkeller" target="_blank"><img src="assets/img/twitter.png" alt="twitter" /></li>
+                <li><a href="http://www.flickr.com/photos/eloist2" target="_blank"><img src="assets/img/flickr.png" alt="flickr" /></li>
+                <li><a href="http://www.github.com/zkellerdevelops" target="_blank"><img src="assets/img/github.png" alt="github" /></li>
+                <li><a href="http://www.instagram.com/eloist" target="_blank"><img src="assets/img/instagram.png" alt="instagram" /></li>
+                <li><a href="https://open.spotify.com/user/eloist" target="_blank"><img src="assets/img/spotify.png" alt="spotify" /></li>
+                <li><a href="http://www.linkedin.com/in/zkellerdevelops" target="_blank"><img src="assets/img/linkedin.png" alt="linked in" /></a></li>
+              </ul>
+            </div>
+            <a href="mailto:zkellerdevelops@gmail.com.com"><span class="glyphicon glyphicon-envelope toppad aqua"></span></a><a href="mailto:zkellerdevelops@gmail.com.com"><p>zkellerdevelops@gmail.com</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div class="container-fluid" id="footerbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 toppad">
+          <img src="assets/img/logosmall.png" alt="ZLK" />
+          <p>2014 Zach Keller
+          <br>Crafted with love in the Volunteer State.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/scrollReveal.js"></script>
+  <script>
+    window.scrollReveal = new scrollReveal();
+    //or
+    // window.scrollReveal2 = new scrollReveal( {reset: true,elem: document.getElementById('#images')} );
+  </script>
+
 </body>
 </html>
+
