@@ -129,6 +129,13 @@ h3 {
 
 }
 
+.email-text {
+  padding-top: 25px;
+}
+.email-text a {
+  color: #5dc5c3;
+}
+
 h4 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
@@ -209,3 +216,149 @@ body {
     opacity: 0;
     z-index: 2;
 }
+
+#hello {
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#footerbar {
+  height: 200px;
+}
+
+#imagecontainer {
+  position: relative;
+}
+
+#carouselcontent {
+  margin-top: 50px;
+}
+
+#social {
+  position: relative;
+  background-image: url(../img/socialbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#social ul li {
+  display: inline;
+}
+
+#social:before {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #fff;
+  top: 0;
+  content: '';
+  height: 0;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+  width: 0;
+}
+
+
+
+.btn-blue {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #5DC5C3;
+  border-color: #5DC5C3;
+  border-radius: 0;
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active,
+.open .dropdown-toggle.btn-blue {
+  color: #FFFFFF;
+  background-color: #4b9c9a;
+  border-color: #4b9c9a;
+  border-radius: 0;
+}
+
+.btn-blue:active,
+.btn-blue.active,
+.open .dropdown-toggle.btn-blue {
+  background-image: none;
+}
+
+.btn-blue.disabled,
+.btn-blue[disabled],
+fieldset[disabled] .btn-blue,
+.btn-blue.disabled:hover,
+.btn-blue[disabled]:hover,
+fieldset[disabled] .btn-blue:hover,
+.btn-blue.disabled:focus,
+.btn-blue[disabled]:focus,
+fieldset[disabled] .btn-blue:focus,
+.btn-blue.disabled:active,
+.btn-blue[disabled]:active,
+fieldset[disabled] .btn-blue:active,
+.btn-blue.disabled.active,
+.btn-blue[disabled].active,
+fieldset[disabled] .btn-blue.active {
+  background-color: #FFFFFF;
+  border-color: #5DC5C3;
+}
+
+.btn-blue .badge {
+  color: #FFFFFF;
+  background-color: #5DC5C3;
+}
+
+#contactcontainer {
+  position: relative;
+  background-image: url(../img/socialbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 50px 0 200px 0;
+}
+
+#contactcontainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#contactcontainer ul li {
+  display: inline;
+}
+
+#contactcontainer img {
+   width: 80px;
+   height: auto;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.shortform {
+  width: 50%;
+}
+
+.formpad {
+  padding-bottom: 15px;
+}
+
+#textfield {
+  height: 300px;
+}
+
+.transparentbg {
+  background-color: rgba(255, 255, 255, .5);
+}
+
