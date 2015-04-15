@@ -8,13 +8,8 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% 50%;
-  /*height: 500px;*/
 }
 
-.headshot {
-/*  height: 80%;
-  width: 80%;*/
-}
 
 .fullwidth {
 	width: 100%;
@@ -101,10 +96,10 @@ body, html {
 }
 
 h1 {
-	color: #66cccc;
+	color: #5d6060;
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
-  letter-spacing: .5px;
+  letter-spacing: -.5px;
 }
 
 h2 {
@@ -156,7 +151,7 @@ h4 {
 }
 
 p {
-  color: #5dc5c3;
+  color: #5d6060;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -167,26 +162,6 @@ body {
   font-weight: 300;
   font-size: 14px;
 }
-
-@media (min-width: 768px){
-  .container {
-  /* width: 750px; */
-  }
-  .navbar-nav {
-    float: right;
-  }
-}
-
-@media (max-width: 767px) {
-  .about-img-pad {
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
-  .about-text-pad {
-    padding-bottom: 50px;
-  }
-}
-
 
 #mainnav {
   background-color: rgba(0, 0, 0, 0);
