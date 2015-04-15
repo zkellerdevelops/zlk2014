@@ -29,4 +29,10 @@
   .phone-port-pad {
     padding-bottom: 100px;
   }
+  .contact-social-pad {
+    padding-bottom: 50px;
+  }
+  .contact-hdr {
+    font-size: 30px;
+  }
 }
